@@ -1,0 +1,28 @@
+<mat-card class="padding-x-10px login-card" style="background-color: aliceblue" [formGroup]="loginForm">
+  <mat-card-header class="text-center">
+    <mat-card-title>
+      <div class="login-card-title">
+      <mat-icon style="padding-right: 5px">school</mat-icon>
+      eQuiz
+      </div>
+    </mat-card-title>
+    <mat-card-subtitle style="margin: auto">
+      Login to your account
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password">
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions class="text-center">
+    <button (click)="login()" mat-raised-button color="primary" style="width : 40%">LogIn</button>
+  </mat-card-actions>
+</mat-card>
+
+
